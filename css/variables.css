@@ -1,0 +1,9 @@
+:root {
+  --yellow: #fae100;
+  --main-border: 1px solid rgba(0, 0, 0, 0.2);
+  --font-color: rgba(0, 0, 0, 0.5);
+  --chat-backcolor: #abc1d1;
+  --chat-color: #fee500;
+  --date-color: #92a4b2;
+  --key-color: #abb1ba;
+}

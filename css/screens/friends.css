@@ -1,0 +1,53 @@
+#friends-display__link {
+  text-align: center;
+  display: block;
+  background-color: #fafafa;
+  padding: 15px 0px;
+  font-size: 17px;
+}
+#friends-display__link i {
+  color: rgba(0, 0, 0, 0.3);
+}
+#friends-display__link span {
+  padding-left: 4px;
+  padding-right: 13px;
+  color: var(--font-color);
+  font-weight: 600;
+}
+.friends-screen {
+  margin: 20px 25px;
+}
+.friends-screen__channel {
+  margin-top: 25px;
+  border-top: var(--main-border);
+}
+.friends-screen__channel-list {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--font-color);
+}
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#splash-screen {
+  background-color: var(--chat-color);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  z-index: 1;
+  animation: hideSplashScreen 0.7s ease-in-out forwards;
+  animation-delay: 1s;
+}

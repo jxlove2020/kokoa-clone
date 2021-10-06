@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find - Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>10:10</span>
+      </div>
+      <div class="status-bar__column">
+        <span>15%</span>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <header class="screen-header">
+      <h1 class="screen-header__title">Find</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i> </span>
+        <span>
+          <a href="setting.html"
+            ><i class="fas fa-cog fa-lg"> </i>
+            <div class="alert-read__cog"></div
+          ></a>
+        </span>
+      </div>
+    </header>
+    <main class="friends-screen chats-screen">
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fas fa-qrcode fa"></i>
+          <span>QR Code</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-address-book"></i>
+          <span>Add by Contacts</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-id-card"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-envelope"></i>
+          <span>Invite</span>
+        </div>
+      </div>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommended friends</h6>
+        <span>You have no recommended friends.</span>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>Open chat</h4>
+          <span
+            >Go to Openchat Home<i class="fas fa-chevron-right fa-xs"></i
+          ></span>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#DAVID</h5>
+            <h6 class="open-post__hashtags">#hobby</h6>
+            <div class="open-post__members">
+              <img src="screenshots/joseph.jpg" />
+              <span class="open-post__members-count">1 members </span>
+              <div class="divider"></div>
+              <span class="open-post__members-status">Active </span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__picture">
+              <img src="screenshots/joseph.jpg" />
+              <div class="open-post__heart">
+                <i class="far fa-heart fa-xs"></i><span>999</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#JOSEPH</h5>
+            <h6 class="open-post__hashtags">#hobby</h6>
+            <div class="open-post__members">
+              <img src="screenshots/joseph.jpg" />
+              <span class="open-post__members-count">1 members </span>
+              <div class="divider"></div>
+              <span class="open-post__members-status">Active </span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__picture">
+              <img src="screenshots/joseph.jpg" />
+              <div class="open-post__heart">
+                <i class="far fa-heart fa-xs"></i><span>999</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="far fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__noticication alert">1</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fas fa-search fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <div class="alert-read"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="no-mobile">
+      <span>스크린이 너무 큽니다. 가로너비를 580px 이하로 맞춰주세요</span>
+    </div>
+  </body>
+</html>

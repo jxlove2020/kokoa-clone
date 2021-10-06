@@ -1,0 +1,24 @@
+.settings__setting {
+  padding: 30px 0px;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.settings__setting:first-child i {
+  color: rgb(125, 198, 240);
+}
+.settings__setting:nth-child(2) i {
+  color: rgb(79, 41, 250);
+}
+.settings__setting:last-child i {
+  color: red;
+}
+.settings__setting i {
+  margin-right: 20px;
+  font-size: 24px;
+}
+.settings__setting-column:last-child {
+  opacity: 0.5;
+}

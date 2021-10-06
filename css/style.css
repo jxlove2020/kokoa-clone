@@ -1,0 +1,28 @@
+/*파일 순서 중요하다 공통된 것 부터 먼저 적용*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import 'reset.css';
+@import 'variables.css';
+
+/*common*/
+@import 'common/status-bar.css';
+@import 'common/nav-bar.css';
+@import 'common/screen-header.css';
+@import 'common/user-component.css';
+@import 'common/alert.css';
+@import 'common/icon-row.css';
+@import 'common/alt-screen-header.css';
+@import 'common/no-mobile.css';
+
+/*screens*/
+@import 'screens/login.css';
+@import 'screens/friends.css';
+@import 'screens/find.css';
+@import 'screens/setting.css';
+@import 'screens/chat.css';
+
+body {
+  color: var(--body-font);
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  margin-top: 30px;
+}

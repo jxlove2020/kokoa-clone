@@ -1,0 +1,165 @@
+#chat-screen {
+  background-color: var(--chat-backcolor);
+  height: 500vh;
+}
+#chat-screen .alt-header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--chat-backcolor);
+  top: 0;
+  margin-top: 30px;
+}
+.main-chat {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.status-bar__chat {
+  background-color: var(--chat-backcolor);
+  z-index: 1; /*Layer 위치 고정*/
+}
+.chat__timestamp {
+  color: white;
+  background-color: var(--date-color);
+  padding: 8px 15px; /*상하 좌우*/
+  border-radius: 16px;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+@keyframes message {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.message-row {
+  transform: translateX(-200px);
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  animation: message 1s linear forwards;
+}
+
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 18px;
+  margin-right: 15px;
+}
+.message__author {
+  margin-bottom: 10px;
+  display: block;
+}
+.message__bubble {
+  background-color: white;
+  padding: 13px;
+  border-radius: 14px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+  font-size: 18px;
+}
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+.message__time,
+.message__author {
+  font-size: 14px;
+  opacity: 0.6;
+}
+.message-row--own {
+  justify-content: flex-end;
+  animation-delay: 0.5s;
+  transform: translateX(200px);
+}
+.message-row--own .message__bubble {
+  /*두개의 클래스를 활용하는것은 modifier*/
+  background-color: var(--chat-color);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 14px;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  align-items: center;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+.reply i {
+  opacity: 0.5;
+}
+.reply .reply__column:first-child {
+  width: 10%;
+}
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: -19px;
+  top: 2px;
+}
+.reply__column:last-child > i {
+  right: 20px;
+  top: 3px;
+}
+.reply input {
+  padding: 10px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+.reply input:focus {
+  outline: none;
+}
+.reply__column button i {
+  opacity: 1;
+}
+.reply__column button {
+  background-color: var(--chat-color);
+  border: none;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.reply__column input:focus {
+  outline: none;
+}
+.reply .form__column,
+.reply .fa-meh-blank {
+  transition: opacity 0.5s ease;
+}
+/* reply내부에 어떤 element가 focus되어 있다면...*/
+.reply:focus-within .form__column,
+.reply:focus-within .fa-meh-blank {
+  opacity: 0;
+}
+.reply:focus-within input {
+  width: 93vw;
+  transform: translateX(-11%);
+}
+.reply:focus-within {
+  background-color: var(--yellow);
+}
+.reply:focus-within button {
+  transform: translateX(-10px);
+}
