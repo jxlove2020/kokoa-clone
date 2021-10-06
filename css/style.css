@@ -21,7 +21,6 @@
 @import 'screens/chat.css';
 
 body {
-  color: var(--body-font);
   font-family: 'Open Sans', sans-serif;
   height: 100vh;
   margin-top: 30px;
